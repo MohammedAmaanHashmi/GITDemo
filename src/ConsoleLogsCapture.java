@@ -26,6 +26,7 @@ public class ConsoleLogsCapture {
 		driver.findElement(By.linkText("Cart")).click();
 		driver.findElement(By.id("exampleInputEmail1")).clear();
 		driver.findElement(By.id("exampleInputEmail1")).sendKeys("2");
+		System.out.println("Hello World");
 		
 		LogEntries entry= driver.manage().logs().get(LogType.BROWSER); //Get LogEntries object
 		 List<LogEntry>logs = entry.getAll();  //LogEntryobject- getAll method return all logs in list

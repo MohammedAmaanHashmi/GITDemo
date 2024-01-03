@@ -32,7 +32,7 @@ public class SetGeoLocation {
 		driver.findElements(By.cssSelector(".LC20lb")).get(0).click();
 		String title =driver.findElement(By.cssSelector(".our-story-card-title")).getText();
 		System.out.println(title);
-		
+		System.out.println("Hello World");
 		
 		
 		
